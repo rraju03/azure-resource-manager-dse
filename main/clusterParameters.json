@@ -1,0 +1,12 @@
+{
+    "regions": [
+        "East US",
+        "Central US",
+        "West US"
+    ],
+    "nodesPerRegion": 10,
+    "nodeSize": "Standard_D3",
+    "username": "datastax",
+    "password": "foo123!"
+}
+
