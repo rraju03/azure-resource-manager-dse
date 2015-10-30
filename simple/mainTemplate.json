@@ -53,9 +53,9 @@
     "subnetName": "Tier-3",
     "clusterRange": {
       "base": "172.31.195.",
-      "start": 21
+      "start": 31
     },
-    "opsCenterIP": "172.31.195.20",
+    "opsCenterIP": "172.31.195.30",
     "osSettings": {
       "imageReference": {
         "publisher": "Canonical",
