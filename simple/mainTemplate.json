@@ -41,7 +41,7 @@
     }
   },
   "variables": {
-    "clusterName": "sbcluster",
+    "clusterName": "integrate1",
     "region": "[resourcegroup().location]",
     "templateBaseUrl": "https://raw.githubusercontent.com/rraju03/azure-arm-dse/master/simple/",
     "nodesTemplateUrl": "[concat(variables('templateBaseUrl'), 'nodes.json')]",
