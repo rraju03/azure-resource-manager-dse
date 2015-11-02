@@ -53,9 +53,9 @@
     "subnetName": "Tier-3",
     "clusterRange": {
       "base": "172.31.195.",
-      "start": 31
+      "start": 41
     },
-    "opsCenterIP": "172.31.195.30",
+    "opsCenterIP": "172.31.195.40",
     "osSettings": {
       "imageReference": {
         "publisher": "Canonical",
@@ -81,33 +81,11 @@
       }
     },
     {
-      "apiVersion": "2015-06-15",
-      "type": "Microsoft.Network/virtualNetworks",
-      "name": "[variables('vnetName')]",
-      "location": "[variables('region')]",
-      "properties": {
-        "addressSpace": {
-          "addressPrefixes": [
-            "172.31.192.0/18"
-          ]
-        },
-        "subnets": [
-          {
-            "name": "[variables('subnetName')]",
-            "properties": {
-              "addressPrefix": "172.31.195.0/24"
-            }
-          }
-        ]
-      }
-    },
-    {
       "name": "nodes",
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2015-01-01",
       "dependsOn": [
-        "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
-        "[concat('Microsoft.Network/virtualNetworks/', variables('vnetName'))]"
+        "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
       ],
       "properties": {
         "mode": "Incremental",
@@ -157,9 +135,8 @@
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2015-01-01",
       "dependsOn": [
-        "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
-        "[concat('Microsoft.Network/virtualNetworks/', variables('vnetName'))]"
-      ],
+        "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
+        ],
       "properties": {
         "mode": "Incremental",
         "templateLink": {
