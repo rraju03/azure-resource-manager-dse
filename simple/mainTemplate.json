@@ -39,7 +39,7 @@
         "description": "Admin password for the virtual machines"
       }
     }
-  }
+  },
   "variables": {
     "clusterName": "testc2",
     "region": "[resourcegroup().location]",
