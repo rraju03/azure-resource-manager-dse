@@ -41,7 +41,7 @@
     }
   },
   "variables": {
-    "clusterName": "testc2",
+    "clusterName": "sandboxc1",
     "region": "[resourcegroup().location]",
     "templateBaseUrl": "https://raw.githubusercontent.com/rraju03/azure-resource-manager-dse/master/simple/",
     "nodesTemplateUrl": "[concat(variables('templateBaseUrl'), 'nodes.json')]",
@@ -53,9 +53,9 @@
     "subnetName": "Tier-3",
     "clusterRange": {
       "base": "172.31.195.",
-      "start": 41
+      "start": 51
     },
-    "opsCenterIP": "172.31.195.40",
+    "opsCenterIP": "172.31.195.50",
     "osSettings": {
       "imageReference": {
         "publisher": "Canonical",
