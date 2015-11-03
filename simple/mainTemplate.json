@@ -41,7 +41,7 @@
     }
   },
   "variables": {
-    "clusterName": "integrate1",
+    "clusterName": "testc1",
     "region": "[resourcegroup().location]",
     "templateBaseUrl": "https://raw.githubusercontent.com/rraju03/azure-resource-manager-dse/master/simple/",
     "nodesTemplateUrl": "[concat(variables('templateBaseUrl'), 'nodes.json')]",
