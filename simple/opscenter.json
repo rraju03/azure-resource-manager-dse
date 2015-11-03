@@ -132,7 +132,7 @@
               "privateIPAllocationMethod": "Static",
               "privateIPAddress": "[parameters('staticIp')]",
               "subnet": {
-                "id": "[variables('subnetRef')]"
+                "id": "[variables('subnetName')]"
               },
               "networkSecurityGroup": {
                 "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('securityGroupName'))]"

@@ -39,9 +39,9 @@
         "description": "Admin password for the virtual machines"
       }
     }
-  },
+  }
   "variables": {
-    "clusterName": "testc1",
+    "clusterName": "testc2",
     "region": "[resourcegroup().location]",
     "templateBaseUrl": "https://raw.githubusercontent.com/rraju03/azure-resource-manager-dse/master/simple/",
     "nodesTemplateUrl": "[concat(variables('templateBaseUrl'), 'nodes.json')]",

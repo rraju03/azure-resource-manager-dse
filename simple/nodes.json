@@ -78,7 +78,7 @@
               "privateIPAllocationMethod": "Static",
               "privateIPAddress": "[concat(parameters('staticIps').base, copyindex(parameters('staticIps').start))]",
               "subnet": {
-                "id": "[variables('subnetRef')]"
+                "id": "[variables('subnetName')]"
               }
             }
           }
